@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places I've Visited</title>
+  <link rel="stylesheet" href="map.css">
+  <script src="map.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <main>
+    <div class="content">
+      <div data-aos="fade-zoom-in"
+           data-aos-easing="ease-in-back"
+           data-aos-delay="300"
+           data-aos-offset="0"
+           data-aos-duration="1500"
+           class="tag-box">
+        <div class="tag">PLACES I'VE VISITED</div>
+      </div>
+    </div>
+
+    <div id="map-container">
+      <iframe 
+        id="map-frame"
+        src="https://www.openstreetmap.org/export/embed.html"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <button id="backButton">← Go Back</button>
+  </main>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Ana içerik hizalama */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Tag Box (INTRODUCTION tarzı) */
+.tag-box {
+  position: relative;
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  background: linear-gradient(to right, #656565, #7f42a7, #6600c5, #5300a0, #757575, #656565);
+  background-size: 200%;
+  animation: animateGradient 2.5s linear infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes animateGradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+.tag-box .tag {
+  position: absolute;
+  inset: 3px 3px 3px 3px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.tag-box .tag:hover {
+  color: #5300a0;
+}
+
+/* Harita çerçevesi */
+#map-container {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  border: 2px solid #6600c5;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(118, 0, 255, 0.4);
+}
+
+#map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Geri Dön butonu */
+#backButton {
+  background: linear-gradient(90deg, #7f42a7, #6600c5, #5300a0);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+#backButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(118, 0, 255, 0.6);
+}

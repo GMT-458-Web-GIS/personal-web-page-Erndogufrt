@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Eren Doğu Fırat</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<a href="index.html" class="back-tag">Back to Home</a>
+
+<section class="about-section" data-aos="fade-up" data-aos-duration="1500">
+
+    <!-- Fotoğraf -->
+    <div class="about-photo">
+        <img src="images.jpg" alt="About Me Photo">
+    </div>
+
+    <!-- Biyografi -->
+    <div class="about-text">
+        <h1>Hi, I’m Eren Doğu Fırat</h1>
+        <p>
+            Motivated Geomatics Engineering student passionate about GIS, Photogrammetry, and GNSS Geodesy. 
+            Experienced in digital mapping, 3D modeling, and UAV/satellite data processing. Skilled in project management,
+            software integration with geospatial applications, and producing accurate geospatial models. Strong leadership,
+            teamwork, and problem-solving abilities, eager to contribute to the GIS and geodesy fields.
+        </p>
+    </div>
+
+    <!-- Experiments / Stajlar -->
+    <div class="about-experiences">
+    <h2>Experiments / Internships</h2>
+    <div class="cards">
+        <!-- Flash Card 1 -->
+        <div class="card" onclick="toggleCard(this)">
+            <h3>Atay Engineering</h3>
+            <p>07/2024 – 10/2024 | Ankara, Türkiye</p>
+            <div class="card-extra">
+                <img src="internship1.jpg" alt="Atay Internship">
+                <p> During my internship at Atay Mühendislik, I contributed to the 3D Gordion Project. 
+                    My responsibilities included processing UAV and drone imagery to create high-resolution 3D models. 
+                    I also assisted in detecting micro-cracks on structures using thermal cameras. 
+                    This experience enhanced my skills in photogrammetry, remote sensing, and image analysis.</p>
+            </div>
+        </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Anka Survey Engineering</h3>
+                <p>07/2025 – 09/2025 | Ankara, Türkiye </p>
+                <div class="card-extra">
+                    <img src="internship2.jpg" alt="Internship 2">
+                    <p> During my time at Anka Harita, I gained practical experience in zoning and cadastre applications.
+                        I participated in parcel boundary determinations, zoning plan analyses, and land subdivision
+                        processes. This work strengthened my understanding of cadastral regulations, zoning
+                        implementation, and field–office coordination.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="about-projects">
+        <h2>Projects</h2>
+        <div class="cards">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Gordion Digital Twin</h3>
+                <p>3D digital twin creation</p>
+                <div class="card-extra">
+                    <img src="gordion.png" alt="Gordion Project">
+                    <p>Used drones and GIS to produce detailed 3D models.</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Raspberry Pi Drone Project</h3>
+                <p>Drone Development</p>
+                <div class="card-extra">
+                    <img src="drone.jpg" alt="Solar Project">
+                    <p> Designed and developed an image capturing drone using Raspberry Pi and an F-450 frame, focusing on
+                        integrating hardware components and developing software solutions to achieve efficient data collection
+                        and processing.</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Lidar-Based Indoor Navigation</h3>
+                <p>Point cloud and orthophoto production</p>
+                <div class="card-extra">
+                    <img src="lidar.jpg" alt="Drone Project">
+                    <p> Developing a system for precise indoor navigation by processing and refining LiDAR data to build a reliable real-time
+                        tracking infrastructure for indoor environments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="about-skills">
+        <h2>Skills</h2>
+        <div class="cards">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Python</h3>
+                <p>Programming and data analysis</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>GIS</h3>
+                <p>QGIS, ArcGIS, Spatial Analysis</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>3D Modeling</h3>
+                <p>Point clouds, meshes, and digital twins</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Remote Sensing</h3>
+                <p>Image processing, NDVI, orthophotos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="about-certificates">
+        <h2>Certificates</h2>
+        <div class="cards timeline">
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Certificate 1</h3>
+                <p>Organization A</p>
+                <div class="card-extra">
+                    <img src="cert1.jpg" alt="Certificate 1">
+                    <p>Details / Date</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Certificate 2</h3>
+                <p>Organization B</p>
+                <div class="card-extra">
+                    <img src="cert2.jpg" alt="Certificate 2">
+                    <p>Details / Date</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Certificate 3</h3>
+                <p>Organization C</p>
+                <div class="card-extra">
+                    <img src="cert3.jpg" alt="Certificate 3">
+                    <p>Details / Date</p>
+                </div>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Certificate 4</h3>
+                <p>Organization D</p>
+                <div class="card-extra">
+                    <img src="cert4.jpg" alt="Certificate 4">
+                    <p>Details / Date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Flash card overlay -->
+<div id="cardOverlay" class="card-overlay" onclick="closeCardOverlay()"></div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+
+const overlay = document.getElementById('cardOverlay');
+let activeCard = null;
+
+function toggleCard(card) {
+    card.classList.add('enlarged');
+    overlay.classList.add('active');
+    activeCard = card;
+}
+
+function closeCardOverlay() {
+    if (activeCard) {
+        activeCard.classList.remove('enlarged');
+        overlay.classList.remove('active');
+        activeCard = null;
+    }
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === "Escape") closeCardOverlay();
+});
+</script>
+</body>
+</html>
