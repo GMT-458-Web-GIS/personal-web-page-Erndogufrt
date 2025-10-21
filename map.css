@@ -21,7 +21,7 @@ main {
   padding-bottom: 3rem;
 }
 
-/* Tag Box (INTRODUCTION tarzı) */
+/* Tag Box */
 .tag-box {
   position: relative;
   width: 18rem;
@@ -57,22 +57,17 @@ main {
   color: #5300a0;
 }
 
-/* Harita çerçevesi */
-#map-container {
-  width: 90%;
-  max-width: 900px;
-  height: 500px;
-  border: 2px solid #6600c5;
+#map {
+  height: 70vh;             /* Harita boyutu sayfaya uygun */
+  width: 90vw;              /* Genişlik, responsive */
+  max-width: 1200px;
   border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 0 20px rgba(118, 0, 255, 0.4);
+  margin: 20px auto;
+  box-shadow: 0 0 40px rgba(118, 0, 255, 0.6), 
+              0 0 60px rgba(127, 66, 167, 0.4),
+              0 0 80px rgba(83, 0, 160, 0.3); /* gradient glow efekti */
 }
 
-#map-frame {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
 /* Geri Dön butonu */
 #backButton {
@@ -92,3 +87,8 @@ main {
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(118, 0, 255, 0.6);
 }
+
+
+
+
+
