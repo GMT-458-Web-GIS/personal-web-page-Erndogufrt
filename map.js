@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ---- Gezilen Yerler ----
   const visitedPlaces = [
-    { name: "Montenegro", coords: [42.4413, 19.2627], img: "images/montenegro.jpg", date: "June 2024" },
-    { name: "Thailand", coords: [13.7563, 100.5018], img: "images/thailand.jpg", date: "December 2023" },
-    { name: "Bulgaria", coords: [42.7339, 25.4858], img: "images/bulgaria.jpg", date: "April 2025" },
-    { name: "Georgia", coords: [41.7151, 44.8271], img: "images/georgia.jpg", date: "May 2025" }
+    { name: "Montenegro", coords: [42.4413, 19.2627], img: "montenegro.jpg", date: "June 2022" },
+    { name: "Thailand", coords: [13.7563, 100.5018], img: "thailand.jpg", date: "December 2023" },
+    { name: "Bulgaria", coords: [42.7339, 25.4858], img: "bulgaria.jpg", date: "April 2024" },
+    { name: "Georgia", coords: [41.7151, 44.8271], img: "georgia.jpg", date: "May 2023" }
   ];
 
   const markerObjects = [];
