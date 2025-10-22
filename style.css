@@ -502,3 +502,88 @@ main{
 }
 
 
+
+
+
+
+
+
+
+
+/* ---- Normal sayfa blur efekti ---- */
+body:has(#kobit-popup:target) main {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* ---- Popup görünümü ---- */
+.popup-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background: black;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 25px rgba(166, 77, 255, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  z-index: 9999;
+}
+
+/* ---- Tıklanınca aktif olma ---- */
+#kobit-popup:target {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* ---- Fotoğraf ve efekt ---- */
+.popup-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px rgba(166, 77, 255, 0.4);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(204, 128, 255, 0.9);
+  }
+}
+
+/* ---- Kapat butonu ---- */
+.popup-card .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.popup-card .close:hover {
+  color: #a64dff;
+}
+
+/* ---- Link (KOBİT) görünümü ---- */
+.kobit-link {
+  color: #a64dff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.kobit-link:hover {
+  color: #c77dff;
+}
