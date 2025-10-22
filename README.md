@@ -1,5 +1,7 @@
 # 🌍 Eren Doğu Fırat - Personal Web & Map Project
-
+ Page Link: https://gmt-458-web-gis.github.io/personal-web-page-Erndogufrt/
+ 
+ Repository Link: https://github.com/GMT-458-Web-GIS/personal-web-page-Erndogufrt/
 
 ## 🧭 Overview
 This project is a **personal portfolio website** created by **Eren Doğu Fırat**, a Geomatics Engineering student passionate about **GIS**, **Photogrammetry**, and **3D Mapping**.  
